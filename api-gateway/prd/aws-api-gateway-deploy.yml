@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aws-api-gateway-deployment
+  name: k8s-api-gateway-ß
 spec:
   replicas: 1
   selector:
