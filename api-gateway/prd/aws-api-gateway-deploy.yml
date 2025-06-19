@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k8s-api-gateway-deployment
+  name: aws-api-gateway-deployment
 spec:
   replicas: 1
   selector:
@@ -10,11 +10,11 @@ spec:
   template:
     metadata:
       labels:
-        app: k8s-api-gateway
+        app: k8s-api-gatewayz
     spec:
       containers:
       - name: k8s-api-gateway
-        image: solarhc/k8s-api-gateway:0.0.6
+        image: dingcobel/k8s-api-gateway:0.0.5
         imagePullPolicy: Always
         env:
         - name: SPRING_PROFILES_ACTIVE
